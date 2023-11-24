@@ -8,7 +8,7 @@ let socket= null;
 onMounted(()=>{
     // console.log('mounted');
     //connect to web sockets servers
-    socket= new WebSocket('ws://localhost:3000/primus');
+    socket= new WebSocket('wss://discordchat-mwtg.onrender.com/primus');
 
     //listen for messages from web socket server
     socket.onmessage= (event)=>{
